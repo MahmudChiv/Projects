@@ -1,0 +1,81 @@
+<!Doctype Html>
+
+<Html>
+
+<head>
+    
+    <title>Tip Calculator</title>
+    
+    <link rel="stylesheet" type="text/css" href="Tip.css">
+    
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    
+    </head>
+    
+     <Body>
+      
+        <div id="container">
+          
+            <div id="calculator">
+            
+                <h1>Tip Calculator</h1>
+                
+                <form>
+                
+                    <label for="Bill">
+                    
+                    How was your bill<br>
+                        $<input type="text" id="Bill" >
+                    </label>
+                    <br>
+                    
+                    <label>
+                        
+                        How was your service<br>
+                        <select id="Service">
+                        
+                        <option Disabled Selected value=0>--Choose an Option--</option>
+                            
+                            <option value="1">100%-Excellent</option>
+                            
+                            <option value="0.7">70%-Good</option>
+                            
+                            <option value="0.4">40%-fair</option>
+                            
+                            <option value="0.1">10%-Terrible</option>
+                            
+                        </select>
+                        
+                    </label>
+                    <br>
+                    
+                    <label>
+                    
+                    How many people are sharing the bill?<br>
+                        <input type="text" id="People"> People
+                    </label>
+                    
+                    <button id="calculate">Calculate</button>
+                
+                </form>
+            </div><!--#calculator-->
+            
+            <div id="totaltip">
+                    
+                <sup>$</sup> <span id="tip">0.00</span>
+                    
+                    <small id="each">each</small>
+                
+            </div><!--#totaltip-->
+        
+        </div><!--#container-->
+                  
+         
+         <!--If CDN fails to load-->
+        <script>window.jQuery || document.write( '<script src="jQuery.3.6.0.js"><\/script>');</script>
+         
+          <script type="text/javascript" src="calculator.js"></script> 
+    
+    </Body>
+    
+</Html>

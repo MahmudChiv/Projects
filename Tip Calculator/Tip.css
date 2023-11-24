@@ -1,0 +1,81 @@
+body{
+    background: rgba(0,0,0,0.75)
+}
+
+#container{
+    width: 400px;
+    /*height: 300px;*/
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    background: lightgrey;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px; 
+}
+
+h1{
+    color: darkgoldenrod;
+    font-family: courier;
+    padding-bottom: 20px;
+}
+
+form{
+    text-align: left;
+}
+
+form label{
+    display: block;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+form input,
+form select{
+    padding: 8px;
+    margin: 10px 0;
+}
+
+input[type="text"]{
+    width: 90px;
+}
+
+#calculate{
+    background: hsl(0,100%,20% );
+    color: white;
+    padding: 10px;
+    border: solid 1px grey;
+    width: 70%;
+    position: relative;
+    left: 40;
+}
+
+#calculate:hover{
+    background: hsl(0, 100%, 40%);
+}
+
+#calculate:active{
+    background: hsl(0, 100%, 10%);
+    top: 2px;
+    left: 1px;
+}
+
+#totaltip::before{
+    content: "Tip Amount";
+    font-size: 20px;
+    display: block;
+}
+
+
+#totaltip{
+    margin: 30px;
+    font-size: 40px;
+    color: #555;
+ }   
+    
+#each{
+    font-size: medium;
+}  
+ 
+
+    
+    

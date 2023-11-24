@@ -1,0 +1,1 @@
+document.getElementById('ime').innerHTML = "Hello World"
